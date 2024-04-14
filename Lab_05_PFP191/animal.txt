@@ -1,0 +1,15 @@
+dog: cho
+cat: meo
+hamster: chuot hamster
+gold fish: ca vang
+tropical fish: ca nhiet doi
+bird: chim
+rabbit: tho
+turtle: rua
+parrot: vet
+gecko: tac ke
+frog: ech
+ferret: chon suong
+snake: ran
+snail: oc sen
+Guinea pig: chuot lang
