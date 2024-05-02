@@ -9,7 +9,7 @@ def sort_list(StudentList):
 while True:
     try:
         StudentList = dict()
-        for i in range(10):
+        for i in range(5):
             name = input("Enter student's full name: ")
             GPA = float(input("Enter GPA: "))
             StudentList[name] = GPA

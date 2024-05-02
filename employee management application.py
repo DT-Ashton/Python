@@ -8,7 +8,7 @@ class Employee:
 
 class Fulltime(Employee):
     def __init__(self, code, name, phone_number, address, absent):
-        Employee.__init__(self, code, name, phone_number, address)  # Có thể dùng upper() thay cho Employee
+        super().__init__(code, name, phone_number, address)  # Dùng supper() thay cho Employee thì ko cần self
         self.absent = absent
         self.salary = 1500
         self.total = 0
@@ -39,7 +39,7 @@ def add_parttime():
     phone_number = input('Enter phone number:')
     address = input('Enter address')
     present = int(input('Enter present: '))
-    employee = Fulltime(code, name, phone_number, address, present)
+    employee = Parttime(code, name, phone_number, address, present)
     employee_list.append(employee)
     checksalary(employee)
 
