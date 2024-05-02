@@ -10,8 +10,9 @@ def bubbleSort(arr):
         if not swapped:
             print(swapped)
             break
-    return arr
 
 # Driver code to test above 
 arr = [64, 34, 25, 12, 22, 11, 90]
-print("Sorted arr:", bubbleSort(arr))
+print('original:', arr)
+bubbleSort(arr)
+print("Sorted arr:", arr)

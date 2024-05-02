@@ -1,16 +1,19 @@
-def insertionSort(arr):
-    # Traverse through 1 to len(arr) 
-    for i in range(1, len(arr)):
-        key = arr[i] 
-        # Move elements of arr[0..i-1], that are greater than key, to one position ahead of their current position
-        j = i-1 
-        while j >= 0 and key < arr[j] :
-                arr[j + 1] = arr[j] 
-                j -= 1 
-        arr[j + 1] = key 
+def insertionSort(my_array):
+    for i in range(1, len(my_array)):
+        insert_index = i
+        current_value = my_array[i]
+        for j in range(i - 1, -1, -1):
+            if my_array[j] > current_value:
+                my_array[j + 1] = my_array[j]
+                insert_index = j
+            else:
+                break
+        print(f'value {current_value} insert to index {insert_index}:')
+        my_array[insert_index] = current_value
+        print(i, my_array)
         
 # Driver code to test above 
-arr = [12, 11, 13, 5, 6] 
-insertionSort(arr) 
-for i in range(len(arr)): 
-    print ("% d" % arr[i])
+arr = [12, 11, 13, 5, 6]
+print('original:', arr)
+insertionSort(arr)
+print("Sorted array:", arr)
