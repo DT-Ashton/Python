@@ -7,7 +7,7 @@ def selectionSort(my_array):
                 min_index = j
         print(f'min {my_array[min_index]} swap with {my_array[i]}:')
         my_array[i], my_array[min_index] = my_array[min_index], my_array[i]
-        print(i, my_array)
+        print(i, my_array, '\n')
     print("Sorted array:", my_array)
 
 arr = [64, 34, 25, 12, 22, 11, 90, 5]

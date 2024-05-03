@@ -10,9 +10,8 @@ def insertionSort(my_array):
                 break
         print(f'value {current_value} insert to index {insert_index}:')
         my_array[insert_index] = current_value
-        print(i, my_array)
-        
-# Driver code to test above 
+        print(i, my_array, '\n')
+
 arr = [12, 11, 13, 5, 6]
 print('original:', arr)
 insertionSort(arr)
