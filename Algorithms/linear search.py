@@ -1,19 +1,13 @@
-# Python3 code to linearly search x in arr[].  
-# If x is present then return its location, 
-# otherwise return -1 
-  
-def search(arr, n, x): 
-    for i in range (0, n): 
-        if (arr[i] == x): #i là thứ tự của phần tử
-            return i; 
-    return -1; 
-  
-# Driver Code 
-arr = [ 2, 3, 4, 10, 40 ]; 
-x = 10; 
-n = len(arr); 
-result = search(arr, n, x) 
-if(result == -1): 
-    print("Element is not present in array") 
-else: 
-    print("Element is present at index", result);
+def search(arr, target):
+    for i in range(0, len(arr)):
+        if arr[i] == target:
+            return i   # If x is present then return its location
+    return -1          # otherwise, return -1
+
+arr = [2, 3, 4, 10, 40]
+target = 10
+result = search(arr, target)
+if result == -1:
+    print(f"{target} not found in array")
+else:
+    print(f"{target} found at index {result}")
